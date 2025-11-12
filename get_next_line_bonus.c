@@ -60,7 +60,7 @@ static char	*ft_next_line(char *buffer)
 	j = 0;
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
-	if (!buffer[i])
+	if (!buffer[i] || !buffer[i + 1])
 	{
 		free(buffer);
 		return (0);
